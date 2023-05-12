@@ -1,0 +1,15 @@
+:root {
+  /* BACKGROUND  */
+  --background-primary-color: #fffffe;
+  --bakground-secondary-color: ##d1d1e9;
+  --background-tertiary-color: #e45858;
+
+  /* BUTTONS */
+  --background-btn-color: #6246ea;
+  --background-btn-hover-color: #573ed3;
+
+  /* FONT */
+  --font-primary-color: #2b2c34;
+  --font-secondary-color: #6246ea;
+  --font-tertiary-color: #e45858;
+}

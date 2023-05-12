@@ -1,0 +1,14 @@
+@import '../../styles/_colors.css';
+@import '../../styles/_fontSizes.css';
+
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  background: var(--background-primary-color);
+  border-bottom: 2px solid var(--background-btn-color);
+}
+
+.header__title {
+  color: var(--font-primary-color);
+}

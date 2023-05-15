@@ -11,4 +11,11 @@
 
 .header__title {
   color: var(--font-primary-color);
+  font-size: var(--font-large-size);
+}
+
+@media (max-width: 600px) {
+  .header__title {
+    font-size: var(--font-regular-size);
+  }
 }

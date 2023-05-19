@@ -15,11 +15,13 @@
 
 .presentation__title {
   font-size: var(--font-large-size);
+  color: var(--font-primary-color);
 }
 
 .presentation__text {
   width: 50%;
   font-size: var(--font-regular-size);
+  color: var(--font-primary-color);
 }
 
 @media (max-width: 600px) {

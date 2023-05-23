@@ -3,11 +3,6 @@ export type PeopleOption = {
   label: string
 }
 
-export type AgeOption = {
-  value: string
-  label: string
-}
-
 export type HobbiesOption = {
   value: string
   label: string

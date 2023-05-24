@@ -1,0 +1,52 @@
+@import '../../styles/_colors.css';
+@import '../../styles/_fontSizes.css';
+
+.form {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  background: var(--background-primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.input__label {
+  font-weight: var(--font-bold-weight);
+  color: var(--font-primary-color);
+}
+
+.input__select {
+  height: 2.5rem;
+  width: 20rem;
+  border-radius: 6px;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.form__btn {
+  margin-top: 1rem;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 4px solid var(--background-btn-color);
+  background: transparent;
+  color: var(--font-primary-color);
+  font-weight: var(--font-bold-weight);
+  transition: all 0.3s ease;
+}
+
+.form__btn:hover {
+  background: var(--background-btn-color);
+  color: var(--font-primary-color);
+}

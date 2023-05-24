@@ -47,7 +47,7 @@ const Form = () => {
 
   return (
     <div>
-      <label htmlFor='people-select'>Select someone:</label>
+      <label htmlFor='people-select'>Quem irá receber o presente?</label>
       <select
         id='people-select'
         value={selectedOptions.people}
@@ -59,7 +59,7 @@ const Form = () => {
           </option>
         ))}
       </select>
-      <label htmlFor='age-select'>Select age:</label>
+      <label htmlFor='age-select'>Qual a idade?</label>
       <select
         id='age-select'
         value={selectedOptions.age}
@@ -71,7 +71,7 @@ const Form = () => {
           </option>
         ))}
       </select>
-      <label htmlFor='hobbies-select'>Select hobbies:</label>
+      <label htmlFor='hobbies-select'>Do que a pessoa gosta?</label>
       <select
         id='hobbies-select'
         value={selectedOptions.hobbies}
@@ -84,7 +84,7 @@ const Form = () => {
         ))}
       </select>
 
-      <button onClick={handleSubmit}>Submit</button>
+      <button onClick={handleSubmit}>Pedir sugestões</button>
 
       {resultMessage ? <p>{resultMessage}</p> : null}
     </div>

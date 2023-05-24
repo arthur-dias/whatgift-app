@@ -1,15 +1,14 @@
 :root {
   /* BACKGROUND  */
-  --background-primary-color: #fffffe;
-  --background-secondary-color: #d1d1e9;
-  --background-tertiary-color: #e45858;
+  --background-primary-color: #fcfcfc;
+  --background-secondary-color: #c5c5fe;
+  --background-tertiary-color: #aeebdd;
 
   /* BUTTONS */
-  --background-btn-color: #6246ea;
-  --background-btn-hover-color: #573ed3;
+  --background-btn-color: #c5c5fe;
 
   /* FONT */
-  --font-primary-color: #2b2c34;
-  --font-secondary-color: #6246ea;
-  --font-tertiary-color: #e45858;
+  --font-primary-color: #111111;
+  --font-secondary-color: #c5c5fe;
+  --font-tertiary-color: #aeebdd;
 }

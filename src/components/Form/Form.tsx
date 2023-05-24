@@ -126,7 +126,10 @@ const Form = () => {
         </select>
       </div>
       {allSelected ? (
-        <button onClick={handleSubmit} className={styles.form__btn}>
+        <button
+          onClick={handleSubmit}
+          className={styles.form__btn}
+          data-cy='submit-btn'>
           PEDIR SUGESTÕES
         </button>
       ) : null}

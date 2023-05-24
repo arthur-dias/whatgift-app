@@ -1,5 +1,5 @@
 const Loading = () => {
-  return <div>Loading</div>
+  return <p data-cy='loading-component'>Loading</p>
 }
 
 export default Loading

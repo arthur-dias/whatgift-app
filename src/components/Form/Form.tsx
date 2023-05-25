@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react'
 import { HobbiesOption, PeopleOption, SelectedOptions } from '../../types/form'
 import { FormData } from '../../data/formData'
-import Loading from '../Loading/Loading'
+import Loader from '../Loader/Loader'
 import Message from '../Message/Message'
 import styles from './Form.module.css'
 
@@ -133,7 +133,7 @@ const Form = () => {
           PEDIR SUGESTÕES
         </button>
       ) : null}
-      {isLoading ? <Loading /> : null}
+      {isLoading ? <Loader /> : null}
       {resultMessage ? <Message text={resultMessage} /> : null}
       {error ? <p>Algo de errado ocorreu, tente novamente</p> : null}
     </div>

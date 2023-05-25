@@ -50,3 +50,10 @@
   background: var(--background-btn-color);
   color: var(--font-primary-color);
 }
+
+@media (max-width: 600px) {
+  .input__select,
+  .input__label {
+    font-size: var(--font-small-size);
+  }
+}

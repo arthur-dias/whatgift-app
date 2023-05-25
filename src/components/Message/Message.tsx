@@ -8,7 +8,7 @@ const addNewLines = (text: string) => {
   const sentences = text.split('\n')
 
   const modifiedText = sentences.map((sentence, index) => (
-    <li key={index} className={styles.list__item}>
+    <li key={index} className={styles.list__item} data-cy='message-text'>
       {sentence}
       <br />
     </li>

@@ -76,7 +76,7 @@ const Form = () => {
     <div className={styles.form}>
       <div className={styles.form__input}>
         <label htmlFor='people-select' className={styles.input__label}>
-          QUEM RECEBERÁ O PRESENTE?
+          ESTOU PROCURANDO UM PRESENTE PARA?
         </label>
         <select
           id='people-select'
@@ -93,7 +93,7 @@ const Form = () => {
       </div>
       <div className={styles.form__input}>
         <label htmlFor='age-select' className={styles.input__label}>
-          QUAL A IDADE?
+          COM A IDADE DE
         </label>
         <select
           id='age-select'
@@ -110,7 +110,7 @@ const Form = () => {
       </div>
       <div className={styles.form__input}>
         <label htmlFor='hobbies-select' className={styles.input__label}>
-          O QUE A PESSOA GOSTA DE FAZER?
+          E GOSTA MUITO DE
         </label>
         <select
           id='hobbies-select'
@@ -125,7 +125,7 @@ const Form = () => {
           ))}
         </select>
       </div>
-      {allSelected ? (
+      {!isLoading && allSelected ? (
         <button
           onClick={handleSubmit}
           className={styles.form__btn}
@@ -133,7 +133,8 @@ const Form = () => {
           PEDIR SUGESTÕES
         </button>
       ) : null}
-      {isLoading ? <Loading /> : <Message text={resultMessage} />}
+      {isLoading ? <Loading /> : null}
+      {resultMessage ? <Message text={resultMessage} /> : null}
       {error ? <p>Algo de errado ocorreu, tente novamente</p> : null}
     </div>
   )

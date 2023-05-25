@@ -1,8 +1,27 @@
+import styles from './Message.module.css'
+
 interface MessageProps {
-  text: string | null
+  text: string
+}
+
+const addNewLines = (text: string) => {
+  const sentences = text.split('\n')
+
+  const modifiedText = sentences.map((sentence, index) => (
+    <li key={index} className={styles.list__item}>
+      {sentence}
+      <br />
+    </li>
+  ))
+
+  return modifiedText
 }
 const Message = ({ text }: MessageProps) => {
-  return <div data-cy='message-component'>{text}</div>
+  return (
+    <div className={styles.message} data-cy='message-component'>
+      <ul className={styles.message__list}>{addNewLines(text)}</ul>
+    </div>
+  )
 }
 
 export default Message

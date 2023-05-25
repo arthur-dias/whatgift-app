@@ -1,0 +1,32 @@
+@import '../../styles/_colors.css';
+@import '../../styles/_fontSizes.css';
+
+.message {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.message__list {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 6px;
+  padding: 2rem;
+  background: var(--background-tertiary-color);
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.list__item {
+  color: var(--font-primary-color);
+  font-weight: var(--font-bold-weight);
+}
+
+@media (max-width: 600px) {
+  .message__list {
+    width: 75%;
+    font-size: var(--font-small-size);
+  }
+}

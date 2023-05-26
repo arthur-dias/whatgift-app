@@ -1,0 +1,26 @@
+@import '../../styles/_colors.css';
+@import '../../styles/_fontSizes.css';
+
+.card {
+  background: #c5c5fe45;
+  border: 1px solid var(--background-secondary-color);
+  border-radius: 15px;
+  padding: 1.5rem;
+  width: 450px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.card__icon {
+  width: 50px;
+  align-self: center;
+}
+
+.card__title {
+  font-weight: var(--font-bold-weight);
+  align-self: center;
+}

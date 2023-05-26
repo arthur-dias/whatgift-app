@@ -79,7 +79,7 @@ describe('<Form />', () => {
     cy.get('#hobbies-select').select('Pescar')
     cy.get('[data-cy="submit-btn"]').click()
 
-    cy.get('[data-cy="loading-component"]').should('exist')
+    cy.get('[data-cy="loader-component"]').should('exist')
 
     cy.wait('@submitForm')
 

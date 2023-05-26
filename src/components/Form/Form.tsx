@@ -52,6 +52,7 @@ const Form = () => {
     }
 
     setIsLoading(true)
+    setError(null)
 
     try {
       const response = await fetch(
@@ -135,7 +136,16 @@ const Form = () => {
       ) : null}
       {isLoading ? <Loader /> : null}
       {resultMessage ? <Message text={resultMessage} /> : null}
-      {error ? <p>Algo de errado ocorreu, tente novamente</p> : null}
+      {error ? (
+        <p
+          style={{
+            border: '2px solid red',
+            borderRadius: '6px',
+            padding: '0.5rem',
+          }}>
+          Algo de errado ocorreu, tente novamente
+        </p>
+      ) : null}
     </div>
   )
 }

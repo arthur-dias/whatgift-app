@@ -76,7 +76,7 @@ const Form = () => {
     <div className={styles.form}>
       <div className={styles.form__input}>
         <label htmlFor='people-select' className={styles.input__label}>
-          ESTOU PROCURANDO UM PRESENTE PARA?
+          ESTOU PROCURANDO UM PRESENTE PARA
         </label>
         <select
           id='people-select'

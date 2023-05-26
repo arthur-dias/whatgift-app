@@ -8,7 +8,7 @@ interface CardProps {
 
 const Cards = ({ text }: CardProps) => {
   return (
-    <div className={styles.cards}>
+    <div data-cy='cards-component' className={styles.cards}>
       {CardsData.map((card) => (
         <Card
           icon={card.icon}
@@ -17,7 +17,9 @@ const Cards = ({ text }: CardProps) => {
           key={card.title}
         />
       ))}
-      <p className={styles.cards__text}>{text}</p>
+      <p data-cy='cards-text' className={styles.cards__text}>
+        {text}
+      </p>
     </div>
   )
 }

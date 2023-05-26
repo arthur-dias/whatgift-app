@@ -1,0 +1,28 @@
+@import '../../styles/_colors.css';
+@import '../../styles/_fontSizes.css';
+
+.footer {
+  border-top: 5px solid #000;
+  padding: 1rem;
+  background: var(--background-btn-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer__text {
+  text-align: center;
+  font-weight: var(--font-bold-weight);
+}
+
+.footer__icon {
+  width: 25px;
+}
+
+@media (max-width: 600px) {
+  .footer__text {
+    font-size: var(--font-small-size);
+  }
+}

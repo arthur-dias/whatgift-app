@@ -13,3 +13,9 @@ export type SelectedOptions = {
   age: string
   hobbies: string
 }
+
+export interface CardProps {
+  icon: string
+  title: string
+  text: string
+}

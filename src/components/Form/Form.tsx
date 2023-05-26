@@ -1,5 +1,5 @@
 import { useState, useCallback, useMemo } from 'react'
-import { HobbiesOption, PeopleOption, SelectedOptions } from '../../types/form'
+import { HobbiesOption, PeopleOption, SelectedOptions } from '../../types'
 import { FormData } from '../../data/formData'
 import Loader from '../Loader/Loader'
 import Message from '../Message/Message'

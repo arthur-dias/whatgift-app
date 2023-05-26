@@ -1,10 +1,6 @@
+import { CardProps } from '../../types'
 import styles from './Card.module.css'
 
-interface CardProps {
-  icon: string
-  title: string
-  text: string
-}
 const Card = ({ icon, title, text }: CardProps) => {
   return (
     <div data-cy='card-component' className={styles.card}>

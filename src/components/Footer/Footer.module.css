@@ -12,7 +12,8 @@
   gap: 1rem;
 }
 
-.footer__text {
+.footer__text,
+.footer__year {
   text-align: center;
   font-weight: var(--font-bold-weight);
 }
@@ -22,7 +23,8 @@
 }
 
 @media (max-width: 600px) {
-  .footer__text {
+  .footer__text,
+  .footer__year {
     font-size: var(--font-small-size);
   }
 }

@@ -26,7 +26,7 @@
 
 @media (max-width: 600px) {
   .message__list {
-    width: 75%;
+    width: 100%;
     font-size: var(--font-small-size);
   }
 }

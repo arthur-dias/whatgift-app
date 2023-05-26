@@ -7,7 +7,7 @@ import Presentation from './components/Presentation/Presentation'
 function App() {
   return (
     <>
-      <Header title='Qual presente?' />
+      <Header title='Que presente?' />
       <Presentation
         title='
         Encontre ideias de presentes únicos usando o poder do GPT.'

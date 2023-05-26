@@ -8,3 +8,15 @@
   width: 100%;
   padding: 5rem 1rem 1rem;
 }
+
+.cards__text {
+  padding: 3rem 0;
+  width: 75%;
+}
+
+@media (max-width: 600px) {
+  .cards__text {
+    width: 100%;
+    font-size: var(--font-small-size);
+  }
+}

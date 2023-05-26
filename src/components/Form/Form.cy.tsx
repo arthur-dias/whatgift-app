@@ -1,9 +1,11 @@
 import Form from './Form'
 
 describe('<Form />', () => {
-  it('Displays the form correctly', () => {
+  beforeEach(() => {
     cy.mount(<Form />)
+  })
 
+  it('Displays the form correctly', () => {
     cy.get('#people-select').should('exist')
     cy.get('#age-select').should('exist')
     cy.get('#hobbies-select').should('exist')
@@ -11,8 +13,6 @@ describe('<Form />', () => {
   })
 
   it('Displays an error message if form submission fails', () => {
-    cy.mount(<Form />)
-
     cy.intercept('POST', 'https://api-whatgift.onrender.com/ask', {
       statusCode: 500,
     }).as('submitForm')
@@ -28,8 +28,6 @@ describe('<Form />', () => {
   })
 
   it('Resets the form fields after successful submission', () => {
-    cy.mount(<Form />)
-
     const mockResponse = {
       choices: [
         {
@@ -58,8 +56,6 @@ describe('<Form />', () => {
   })
 
   it('Displays loading state during form submission', () => {
-    cy.mount(<Form />)
-
     cy.intercept('POST', 'https://api-whatgift.onrender.com/ask', {
       statusCode: 200,
       body: {
@@ -88,8 +84,6 @@ describe('<Form />', () => {
   })
 
   it('Submits the form successfully and displays the result', () => {
-    cy.mount(<Form />)
-
     const mockResponse = {
       choices: [
         {
@@ -123,8 +117,6 @@ describe('<Form />', () => {
   })
 
   it('Dont show submit button when not all options are selected', () => {
-    cy.mount(<Form />)
-
     cy.get('[data-cy="submit-btn"]').should('not.exist')
 
     cy.get('#people-select').select('Filho')
@@ -138,8 +130,6 @@ describe('<Form />', () => {
   })
 
   it('Displays the selected options in the request body', () => {
-    cy.mount(<Form />)
-
     cy.intercept('POST', 'https://api-whatgift.onrender.com/ask', (req) => {
       expect(req.body).to.deep.equal({
         message:
@@ -158,8 +148,6 @@ describe('<Form />', () => {
   })
 
   it('Displays the result message after form submission', () => {
-    cy.mount(<Form />)
-
     const mockResponse = {
       choices: [
         {

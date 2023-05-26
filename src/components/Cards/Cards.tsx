@@ -2,7 +2,11 @@ import Card from '../Card/Card'
 import { CardsData } from '../../data/cardsData'
 import styles from './Cards.module.css'
 
-const Cards = (text: string) => {
+interface CardProps {
+  text: string
+}
+
+const Cards = ({ text }: CardProps) => {
   return (
     <div data-cy='cards-component' className={styles.cards}>
       {CardsData.map((card) => (

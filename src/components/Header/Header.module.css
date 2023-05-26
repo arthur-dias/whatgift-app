@@ -5,8 +5,8 @@
   width: 100%;
   text-align: center;
   padding: 1rem;
-  background: var(--background-primary-color);
-  border-bottom: 2px solid var(--background-btn-color);
+  background: var(--background-secondary-color);
+  border-bottom: 5px solid #000;
 }
 
 .header__title {

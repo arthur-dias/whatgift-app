@@ -24,3 +24,9 @@
   font-weight: var(--font-bold-weight);
   align-self: center;
 }
+
+@media (max-width: 600px) {
+  .card {
+    font-size: var(--font-small-size);
+  }
+}
